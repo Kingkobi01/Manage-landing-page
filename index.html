@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwind.config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Manage landing page</title>
+  <style>
+    .btn:hover {
+      border: 1px solid #F25F3A;
+    }
+
+    .show {
+      top: 5%;
+    }
+
+    .up {
+      top: -100%;
+    }
+  </style>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body class="font-vietnamPro w-full overflow-x-hidden bg-veryLightGray">
+  <header class="max-w-[1240px] mx-auto p-4 relative">
+    <nav class="  flex items-center justify-between">
+      <img class="md:w-24" src="./assets/images/logo.svg" alt="Manage Logo">
+      <ul
+          class="nav-menu absolute flex border-md flex-col gap-6 text-lg font-semibold up px-[10em] py-[2em] duration-300 left-[5%] text- mx-auto items-center md:px-4 md:text-md md:font-normal md:relative bg-white md:bg-transparent md:flex-row md:space-x-3 lg:space-x-8 lg:text-sm md:items-center">
+        <li class="hover:text-gray-400 text-veryDarkBlue hover:tracking-wide duration-300">
+          <a href="#">Pricing</a>
+        </li>
+        <li class="hover:text-gray-400 text-veryDarkBlue hover:tracking-wide duration-300">
+          <a href="#">Product</a>
+        </li>
+        <li class="hover:text-gray-400 text-veryDarkBlue hover:tracking-wide duration-300">
+          <a href="#">About Us</a>
+        </li>
+        <li class="hover:text-gray-400 text-veryDarkBlue hover:tracking-wide duration-300">
+          <a href="#">Careers</a>
+        </li>
+        <li class="hover:text-gray-400 text-veryDarkBlue hover:tracking-wide duration-300">
+          <a href="#">Community</a>
+        </li>
+      </ul>
+      <button
+              class="btn hidden bg-brightRed hover:bg-veryPaleRed hover:text-brightRed hover:shadow-veryPaleRed duration-300 text-white px-6 md:block font-semi-bold py-2 md:text-xs rounded-full shadow-md shadow-brightRed">Get
+        Started</button>
+
+      <div class="md:hidden cursor-pointer">
+        <img class="hamburger" src="./assets/images/icon-hamburger.svg" alt="">
+        <img class="close hidden" src="./assets/images/icon-close.svg" alt="">
+      </div>
+      <img class="absolute top-[-30%] right-[-20%] z-[-3]" src="./assets/images/bg-tablet-pattern.svg" alt="">
+    </nav>
+
+    <div class="my-8 flex flex-col-reverse md:flex-row md:w-full items-center justify-between">
+      <div class="flex flex-col md:w-[40%] my-4 md:my-0 space-y-10 text-center justify-between md:text-left">
+        <h1 class="font-bold text-6xl md:text-3xl lg:text-5xl">
+          Bring everyone together to build better products.
+        </h1>
+        <p class="text-gray-500 lg:w-[70%]">Manage makes it simple for software teams to plan day-to-day
+          tasks while keeping the larger team goals in view.</p>
+        <div
+             class="btn bg-brightRed hover:bg-veryPaleRed hover:text-brightRed hover:shadow-veryPaleRed duration-300 w-1/2 md:w-2/3 lg:w-1/2 mx-auto md:mx-0 grid place-items-center text-white px-8 font-semi-bold py-4  rounded-full shadow-md shadow-brightRed">
+          <a href="">Get Started</a>
+        </div>
+      </div>
+      <div><img src="./assets/images/illustration-intro.svg" alt=""></div>
+    </div>
+  </header>
+
+  <main class="mt-[10em] relative">
+    <img src="./assets/images/bg-tablet-pattern.svg" alt="" class="absolute z-[-2] left-[-20%] bottom-[-10%]">
+    <div class="max-w-[1240px] mx-auto px-4 grid md:grid-cols-3 my-16">
+      <div class="space-y-8 col-span-1 text-center w-[100vw] mx-auto md:w-full mb-4 md:text-start pe-8 ">
+        <h2 class="font-bold text-3xl">What’s different about Manage?</h2>
+        <p class="text-gray-500 w-full">Manage provides all the functionality your team needs, without
+          the complexity. Our software is tailor-made for modern digital
+          product teams.</p>
+      </div>
+      <div class="flex flex-col gap-5 col-span-2 lg:ms-10">
+        <div class="space-y-3">
+          <div class="w-[100vw] bg-veryPaleRed md:bg-transparent font-bold flex items-center space-x-6 mx-auto">
+            <div class="bg-brightRed text-white text-2xl px-8 py-2 grid place-items-center rounded-full">01
+            </div>
+            <h3 class="font-semibold">Track company-wide progress</h3>
+          </div>
+          <p class="text-gray-500 w-full md:ps-[7em]">See how your day-to-day tasks fit into the wider vision. Go from
+            tracking progress at the milestone level all the way done to the
+            smallest of details. Never lose sight of the bigger picture again.</p>
+        </div>
+        <div class="space-y-3">
+          <div class="w-[100vw] bg-veryPaleRed md:bg-transparent font-bold flex items-center space-x-6 mx-auto">
+            <div class="bg-brightRed text-white text-2xl px-8 py-2 grid place-items-center rounded-full">02
+            </div>
+            <h3>Advanced built-in reports</h3>
+          </div>
+          <p class="text-gray-500 w-full md:ps-[7em]">Set internal delivery estimates and track progress toward company
+            goals. Our customisable dashboard helps you build out the reports
+            you need to keep key stakeholders informed.</p>
+        </div>
+        <div class="space-y-3">
+          <div class="w-[100vw] bg-veryPaleRed md:bg-transparent font-bold flex items-center space-x-6 mx-auto">
+            <div class="bg-brightRed text-white text-2xl px-8 py-2 grid place-items-center rounded-full">03
+            </div>
+            <h3>Everything you need in one place</h3>
+          </div>
+          <p class="text-gray-500 w-full md:ps-[7em]"> Stop jumping from one service to another to communicate, store
+            files,
+            track tasks and share documents. Manage offers an all-in-one team
+            productivity solution.</p>
+        </div>
+      </div>
+    </div>
+    <div class="py-8 w-full relative">
+
+      <h2 class="text-center font-bold md:text-3xl lg:text-4xl pb-20">What they’ve said</h2>
+      <div class="max-w-[1240px] mb-8 mx-auto md:mt-8 px-4 grid md:grid-cols-2 lg:grid-cols-4 gap-20 md:gap-8">
+        <div class=" bg-gray-200 shadow-md rounded-sm flex flex-col text-center items-center space-y-6 px-8 pb-8">
+          <img class="w-20 mt-[-2.5em]" src="./assets/images/avatar-anisha.png" alt="Anisha Li">
+          <h3 class="font-semibold">Anisha Li</h3>
+          <p class="italic text-gray-500 text-sm">“Manage has supercharged our team’s workflow. The ability to maintain
+            visibility on larger milestones at all times keeps everyone motivated.”</p>
+        </div>
+        <div
+             class="hidden bg-gray-200 shadow-md rounded-sm md:flex flex-col text-center items-center space-y-6 px-8 pb-8">
+          <img class="w-20 mt-[-2.5em]" src="./assets/images/avatar-ali.png" alt="Ali Bravo">
+          <h3 class="font-semibold">Ali Bravo</h3>
+          <p class="italic text-gray-500 text-sm">“We have been able to cancel so many other subscriptions since using
+            Manage. There is no more cross-channel confusion and everyone is much
+            more focused.”</p>
+        </div>
+        <div
+             class="hidden bg-gray-200 shadow-md rounded-sm md:flex flex-col text-center items-center space-y-6 px-8 pb-8">
+          <img class="w-20 mt-[-2.5em]" src="./assets/images/avatar-richard.png" alt="Richard Watts">
+          <h3 class="font-semibold">Richard Watts</h3>
+          <p class="italic text-gray-500 text-sm">“Manage allows us to provide structure and process. It keeps us
+            organized
+            and focused. I can’t stop recommending them to everyone I talk to!”</p>
+        </div>
+        <div
+             class="hidden bg-veryLightGray shadow-md rounded-sm md:flex flex-col text-center items-center space-y-6 px-8 pb-8">
+          <img class="w-20 mt-[-2.5em]" src="./assets/images/avatar-shanai.png" alt="Shanai Gough">
+          <h3 class="font-semibold">Shanai Gough</h3>
+          <p class="italic text-gray-500 text-sm">“Their software allows us to track, manage and collaborate on our
+            projects
+            from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+        </div>
+      </div>
+      <div class="flex md:hidden items-center justify-between mx-auto w-[15%] my-[4rem] ">
+        <div class="p-1 rounded-full border-brightRed border-2 bg-brightRed"></div>
+        <div class="p-1 rounded-full border-brightRed border-2"></div>
+        <div class="p-1 rounded-full border-brightRed border-2"></div>
+        <div class="p-1 rounded-full border-brightRed border-2">
+        </div>
+      </div>
+      <button
+              class="btn block mx-auto bg-brightRed hover:bg-veryPaleRed hover:text-brightRed hover:shadow-veryPaleRed duration-300 text-white px-6 md:block font-semi-bold py-2  rounded-full shadow-md shadow-brightRed">Get
+        Started</button>
+    </div>
+    <div class="py-8 w-full bg-brightRed text-white">
+      <div class="max-w-[1240px] mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+        <h2 class="text-center md:text-start font-bold text-4xl md:text-2xl lg:w-1/3">Simplify how your team works
+          today.
+        </h2>
+        <div class="md:ms-auto"><button
+                  class="px-6 py-3 text-brightRed font-semibold shadow-veryPaleRed shadow-sm bg-white rounded-full hover:bg-brightRed hover:text-white hover:border-[1px] hover:border-white duration-300 ">Get
+            Started</button>
+        </div>
+        <div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <footer class="bg-veryDarkBlue text-white py-[4em]">
+    <div class="max-w-[1240px] mx-auto px-4 flex flex-col-reverse md:flex-row justify-between">
+      <div class="flex flex-col-reverse md:flex-col items-center gap-12 min-h-[100%] mb-8 lg:mb-0"><img
+             src="./assets/images/logoWhite.svg"
+             alt="logo">
+        <div class="flex items-center justify-between mx-auto w-4/5 md:w-full md:gap-6">
+          <img class="w-8 md:w-4" src="./assets/images/icon-facebook.svg" alt="facebook">
+          <img class="w-8 md:w-4" src="./assets/images/icon-youtube.svg" alt="yputube">
+          <img class="w-8 md:w-4" src="./assets/images/icon-twitter.svg" alt="twitter">
+          <img class="w-8 md:w-4" src="./assets/images/icon-pinterest.svg" alt="pinterest">
+          <img class="w-8 md:w-4" src="./assets/images/icon-instagram.svg" alt="instagram">
+        </div>
+      </div>
+      <div class="flex w-1/2 mx-auto my-8 md:w-1/3 justify-between font-light">
+        <ul>
+          <li>Home</li>
+          <li>Pricing</li>
+          <li>Products</li>
+          <li>About Us</li>
+        </ul>
+        <ul>
+          <li>Careers</li>
+          <li>Community</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <div>
+        <div class="flex items-center justify-center gap-5">
+          <input class="px-8 py-3 rounded-full text-gray-700" type="email"
+                 placeholder="Updates in your inbox…">
+          <input class="px-8 py-3 rounded-full btn bg-brightRed hover:bg-veryPaleRed hover:text-brightRed hover:shadow-veryPaleRed duration-300"
+                 type="submit" value="Go">
+        </div>
+      </div>
+    </div>
+    <p class="text-center md:me-12 md:text-end text-gray-400 text-sm">
+      Copyright 2020.
+      All
+      Rights
+      Reserved
+    </p>
+  </footer>
+</body>
+<script src="./assets/js/main.js">
+
+</script>
+
+</html>
