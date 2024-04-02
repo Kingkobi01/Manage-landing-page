@@ -760,6 +760,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.-mr-\[10\%\] {
+  margin-right: -10%;
+}
+
 .box-border {
   box-sizing: border-box;
 }
