@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+
+  <link href="./src/output.css" rel="stylesheet">
+  <title>Manage Landing Page</title>
+</head>
+
+<body class="font-vietnam text-[1rem] overflow-hidden">
+  <header class="">
+    <div class="container flex items-center justify-between">
+      <a href="" class="cursor-pointer">
+        <img class="w-18" src="./images/logo.svg" alt="Manage Logo">
+      </a>
+      <nav
+           class="text-xl md:text-sm font-semibold fixed left-1/2 -translate-x-[50%] md:translate-x-0 md:static w-[75%] md:w-auto -top-[100%] py-8 md:py-auto shadow-lg md:shadow-none bg-white md:bg-none rounded duration-300">
+        <ul class="flex flex-col md:flex-row items-center gap-8 md:gap-[2vw] text-vDBlue duration-300">
+          <li>
+            <a class="hover:text-vDBlue/60" href="#">Pricing</a>
+          </li>
+          <li>
+            <a class="hover:text-vDBlue/60" href="#">Product</a>
+          </li>
+          <li>
+            <a class="hover:text-vDBlue/60" href="#">About Us</a>
+          </li>
+          <li>
+            <a class="hover:text-vDBlue/60" href="#">Careers</a>
+          </li>
+          <li>
+            <a class="hover:text-vDBlue/60" href="#">Community</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn hidden md:flex cursor-pointer">Get Started</button>
+
+      <div role="button" id="menuBtn" class="cursor-pointer md:hidden ">
+        <p class="sr-only">Menu</p>
+        <img id="open" src="./images/icon-hamburger.svg" alt="Hamburger Menu" class="cursor-pointer">
+        <img id="close" class="hidden" src="./images/icon-close.svg" alt="Close Btn">
+      </div>
+
+    </div>
+
+  </header>
+  <main></main>
+  <footer></footer>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn")
+    const header = document.querySelector("header")
+    const nav = document.querySelector("header nav")
+    const open = document.getElementById("open")
+    const close = document.getElementById("close")
+
+    menuBtn.addEventListener("click", () => {
+      header.classList.toggle("show-backdrop")
+      nav.classList.contains("-top-[100%]") ? nav.classList.remove("-top-[100%]") : nav.classList.add("-top-[100%]")
+      nav.classList.contains("top-[10%]") ? nav.classList.remove("top-[10%]") : nav.classList.add("top-[10%]")
+      open.classList.toggle("hidden")
+      close.classList.toggle("hidden")
+    })
+  </script>
+  <!-- 
+  
+    
+  Get Started
+  
+  Bring everyone together to build better products.
+  
+  Manage makes it simple for software teams to plan day-to-day 
+  tasks while keeping the larger team goals in view.
+
+  Get Started
+
+  What’s different about Manage?
+
+  Manage provides all the functionality your team needs, without 
+  the complexity. Our software is tailor-made for modern digital 
+  product teams. 
+
+  01
+  Track company-wide progress
+  See how your day-to-day tasks fit into the wider vision. Go from 
+  tracking progress at the milestone level all the way done to the 
+  smallest of details. Never lose sight of the bigger picture again.
+
+  02
+  Advanced built-in reports
+  Set internal delivery estimates and track progress toward company 
+  goals. Our customisable dashboard helps you build out the reports 
+  you need to keep key stakeholders informed.
+
+  03
+  Everything you need in one place
+  Stop jumping from one service to another to communicate, store files, 
+  track tasks and share documents. Manage offers an all-in-one team 
+  productivity solution.
+
+  What they’ve said
+
+  Anisha Li
+  “Manage has supercharged our team’s workflow. The ability to maintain 
+  visibility on larger milestones at all times keeps everyone motivated.”
+
+  Ali Bravo
+  “We have been able to cancel so many other subscriptions since using 
+  Manage. There is no more cross-channel confusion and everyone is much 
+  more focused.”
+
+  Richard Watts
+  “Manage allows us to provide structure and process. It keeps us organized 
+  and focused. I can’t stop recommending them to everyone I talk to!”
+
+  Shanai Gough
+  “Their software allows us to track, manage and collaborate on our projects 
+  from anywhere. It keeps the whole team in-sync without being intrusive.”
+
+  Get Started
+
+  Simplify how your team works today.
+  Get Started
+
+  Home
+  Pricing
+  Products
+  About Us
+  Careers
+  Community
+  Privacy Policy
+
+  Updates in your inbox…
+  Go
+
+  Copyright 2020. All Rights Reserved
+
+   -->
+</body>
+
+</html>
