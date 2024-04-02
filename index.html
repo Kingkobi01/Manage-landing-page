@@ -14,14 +14,15 @@
   <title>Manage Landing Page</title>
 </head>
 
-<body class="font-vietnam text-[1rem] overflow-hidden">
-  <header class="">
+<body class="font-vietnam text-dBlue text-[1rem] overflow-x-hidden">
+  <!-- Header -->
+  <header class="duration-300">
     <div class="container flex items-center justify-between">
       <a href="" class="cursor-pointer">
         <img class="w-18" src="./images/logo.svg" alt="Manage Logo">
       </a>
       <nav
-           class="text-xl md:text-sm font-semibold fixed left-1/2 -translate-x-[50%] md:translate-x-0 md:static w-[75%] md:w-auto -top-[100%] py-8 md:py-auto shadow-lg md:shadow-none bg-white md:bg-none rounded duration-300">
+           class="text-xl md:text-sm font-semibold fixed left-1/2 -translate-x-[50%] md:translate-x-0 md:static w-[75%] md:w-auto -top-[100%]  shadow-lg md:shadow-none bg-white md:bg-none rounded duration-300">
         <ul class="flex flex-col md:flex-row items-center gap-8 md:gap-[2vw] text-vDBlue duration-300">
           <li>
             <a class="hover:text-vDBlue/60" href="#">Pricing</a>
@@ -51,8 +52,132 @@
     </div>
 
   </header>
-  <main></main>
-  <footer></footer>
+  <!-- End Of Header -->
+
+  <!-- Main -->
+  <main class="space-y-[4em]">
+    <!-- Hero -->
+    <section class="hero container-with-2-cols bg-red py-4 items-center">
+      <div class="space-y-8 text-center md:text-start ">
+        <h1 class="font-bold text-4xl lg:text-5xl">
+          Bring everyone together to build better products.</h1>
+        <p class="text-dBlue/60"> Manage makes it simple for software teams to plan day-to-day
+          tasks while keeping the larger team goals in view.</p>
+        <button class="btn">Get Started</button>
+      </div>
+      <div class="row-start-1 md:col-start-2">
+        <img src="./images/illustration-intro.svg" alt="">
+      </div>
+    </section>
+    <!-- End Of Hero -->
+    <!-- About -->
+    <section class="container-with-2-cols ">
+      <div class="space-y-6">
+        <h2 class="font-bold text-2xl lg:text-3xl">What’s different about Manage?</h2>
+        <p class="text-dBlue/60">Manage provides all the functionality your team needs, without
+          the complexity. Our software is tailor-made for modern digital
+          product teams.</p>
+      </div>
+      <div>
+        <ul class="space-y-8">
+          <li class="space-y-4">
+            <h3
+                class="font-bold text-[13px] lg:text-md py-1 bg-vPRed md:bg-transparent  rounded-tl-full rounded-bl-full ">
+              <span
+                    class="bg-bRed rounded-full text-white font-semibold py-[0.4rem] px-4 lg:px-6 text-[13px] mr-5 lg:-ml-20">01</span>Track
+              company-wide progress
+            </h3>
+            <p class="text-dBlue/60">
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </p>
+          </li>
+          <li class="space-y-2">
+            <h3
+                class="font-bold text-[13px] lg:text-md py-1 bg-vPRed md:bg-transparent  rounded-tl-full rounded-bl-full ">
+              <span
+                    class="bg-bRed rounded-full text-white font-semibold py-[0.4rem] px-4 lg:px-6 text-[13px] mr-5 lg:-ml-20">02</span>Advanced
+              built-in reports
+            </h3>
+            <p class="text-dBlue/60">
+              Set internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.
+            </p>
+          </li>
+          <li class="space-y-2">
+            <h3
+                class="font-bold text-[13px] lg:text-md py-1 bg-vPRed md:bg-transparent  rounded-tl-full rounded-bl-full ">
+              <span
+                    class="bg-bRed rounded-full text-white font-semibold py-[0.4rem] px-4 lg:px-6 text-[13px] mr-5 lg:-ml-20">03</span>Everything
+              you need in one place
+            </h3>
+            <p class="text-dBlue/60">
+              Stop jumping from one service to another to communicate, store files,
+              track tasks and share documents. Manage offers an all-in-one team
+              productivity solution.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End OfAbout -->
+    <!-- Testimonials -->
+    <section></section>
+    <!-- End Of Testimonials -->
+    <section class="bg-bRed py-16">
+      <div class="container-with-2-cols items-center text-center lg:text-start">
+        <div>
+          <p class="font-bold text-2xl lg:text-3xl text-vLGray">Simplify how your team works today.
+            Get Started</p>
+        </div>
+        <div class="flex justify-center md:justify-end">
+          <button class="btn-inverse bg-vLGray text-vPRed lg:ml-auto">Get Started</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- End OfMain -->
+  <footer class="bg-vDBlue text-vLGray py-16 text-sm">
+    <div class="container grid grid-cols-1 grid-rows-3 gap-1 lg:gap-4 md:grid-cols-3 md:grid-rows-1 relative">
+      <div
+           class="flex  justify-evenly gap-4 md:justify-between items-center md:items-start flex-col-reverse md:flex-col row-start-3 md:row-start-1">
+        <img src="./images/logo-dark.svg" alt="">
+        <ul role="list" class="flex items-center justify-between w-[90%] md:w-auto md:gap-3">
+          <li><img class="w-8 md:w-auto" src="./images/icon-facebook.svg" alt=""></li>
+          <li><img class="w-8 md:w-auto" src="./images/icon-youtube.svg" alt=""></li>
+          <li><img class="w-8 md:w-auto" src="./images/icon-twitter.svg" alt=""></li>
+          <li><img class="w-8 md:w-auto" src="./images/icon-pinterest.svg" alt=""></li>
+          <li><img class="w-8 md:w-auto" src="./images/icon-instagram.svg" alt=""></li>
+        </ul>
+      </div>
+      <div class="row-start-2 md:row-start-1">
+        <ul role="list"
+            class="mx-auto grid grid-cols-2 lg:gap-x-16 gap-y-4 font-light w-[80%]">
+          <li class="hover:text-dGBlue duration-200"><a href="#">Home</a></li>
+          <li class="hover:text-dGBlue duration-200"><a href="#">Pricing</a></li>
+          <li class="hover:text-dGBlue duration-200"><a href="#">Products</a></li>
+          <li class="hover:text-dGBlue duration-200"><a href="#">About Us</a></li>
+          <li class="hover:text-dGBlue duration-200"><a href="#">Careers</a></li>
+          <li class="hover:text-dGBlue duration-200"><a href="#">Community</a></li>
+          <li class="hover:text-dGBlue duration-200"><a href="#">Privacy Policy</a></li>
+
+        </ul>
+      </div>
+      <div class="flex items-center md:items-end justify-center md:justify-between flex-col">
+        <div class="flex items-center justify-evenly w-full">
+          <input type="text"
+                 class="bg-white rounded-full text-bRed font-semibold py-1 px-4 lg:py-3 lg:px-6 text-[13px] focus-within:outline-none"
+                 placeholder="Updates in your inbox…">
+          <button
+                  class="bg-bRed rounded-full text-white font-semibold  text-[13px] hover:bg-opacity-75 hover:shadow-lg hover:shadow-bRed duration-300 py-1 px-4 lg:py-3 lg:px-6">Go</button>
+        </div>
+        <p class="text-xs text-dGBlue absolute bottom-0 md:static">Copyright 2020. All Rights
+          Reserved</p>
+      </div>
+    </div>
+  </footer>
 
   <script>
     const menuBtn = document.getElementById("menuBtn")
@@ -72,38 +197,15 @@
   <!-- 
   
     
-  Get Started
   
-  Bring everyone together to build better products.
   
-  Manage makes it simple for software teams to plan day-to-day 
-  tasks while keeping the larger team goals in view.
+  
+ 
 
-  Get Started
+  
 
-  What’s different about Manage?
+  
 
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
-
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from 
-  tracking progress at the milestone level all the way done to the 
-  smallest of details. Never lose sight of the bigger picture again.
-
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
-
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
 
   What they’ve said
 
@@ -126,21 +228,13 @@
 
   Get Started
 
-  Simplify how your team works today.
-  Get Started
+  
 
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
 
-  Updates in your inbox…
-  Go
+  
+  
 
-  Copyright 2020. All Rights Reserved
+  
 
    -->
 </body>
