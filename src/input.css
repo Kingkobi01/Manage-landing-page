@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply bg-bRed rounded-full text-white font-semibold py-3 px-6 text-[13px];
+}
+
+.container {
+  @apply mx-auto max-w-[92%] p-4;
+}
+
+
+@media(max-width: 40rem) {
+  header.show-backdrop::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+    z-index: -1;
+  }
+}
