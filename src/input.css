@@ -17,7 +17,8 @@
 }
 
 header nav {
-  padding-block: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 @media (max-width: 55rem) {
