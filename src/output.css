@@ -764,6 +764,18 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-\[6rem\] {
+  margin-top: 6rem;
+}
+
+.mt-\[4rem\] {
+  margin-top: 4rem;
+}
+
+.mt-\[2rem\] {
+  margin-top: 2rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2958,6 +2970,10 @@ header nav {
 
   .md\:row-start-1 {
     grid-row-start: 1;
+  }
+
+  .md\:mt-\[4rem\] {
+    margin-top: 4rem;
   }
 
   .md\:flex {
